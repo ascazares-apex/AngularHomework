@@ -1,0 +1,27 @@
+<div>
+  <div>
+    <h4>ngFor</h4>
+    <ul>
+      <li *ngFor="let item of strings">{{ item }}</li>
+    </ul>
+  </div>
+  <div>
+    <h4>ngIf</h4>
+    <ul>
+      <ng-container *ngFor="let item of strings">
+        <li *ngIf="item !== 'B'">{{ item }}</li>
+      </ng-container>
+    </ul>
+  </div>
+  <div>
+    <h4>ngSwitch</h4>
+    <ul>
+      <ng-container *ngFor="let item of strings" [ngSwitch]="item">
+        <li *ngSwitchCase="'A'">1</li>
+        <li *ngSwitchCase="'B'">2</li>
+        <li *ngSwitchCase="'C'">3</li>
+        <li *ngSwitchDefault>0</li>
+      </ng-container>
+    </ul>
+  </div>
+</div>
