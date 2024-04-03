@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AttributeDirectivesComponent } from './components/attribute-directives/attribute-directives.component';
 import { StructuralDirectivesComponent } from './components/structural-directives/structural-directives.component';
+import { CustomDirectivesComponent } from './components/custom-directives/custom-directives.component';
+import { CapitalizeDirectiveDirective } from './directives/capitalize-directive.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     AttributeDirectivesComponent,
-    StructuralDirectivesComponent
+    StructuralDirectivesComponent,
+    CustomDirectivesComponent,
+    CapitalizeDirectiveDirective
   ],
   imports: [
     BrowserModule,
