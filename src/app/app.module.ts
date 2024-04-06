@@ -9,6 +9,7 @@ import { StructuralDirectivesComponent } from './components/structural-directive
 import { CustomDirectivesComponent } from './components/custom-directives/custom-directives.component';
 import { CapitalizeDirectiveDirective } from './directives/capitalize-directive.directive';
 import { DataBindingComponent } from './components/data-binding/data-binding.component';
+import { MyFirstModuleModule } from './modules/my-first-module/my-first-module.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DataBindingComponent } from './components/data-binding/data-binding.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MyFirstModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
