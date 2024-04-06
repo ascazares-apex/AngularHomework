@@ -1,0 +1,14 @@
+<div>
+  <div class="exercise-section">
+    <h4 class="section-title">Event Binding</h4>
+    <button class="section-item" (click)="displayAlert()">Click me</button>
+  </div>
+  <div class="exercise-section">
+    <h4 class="section-title">One-Way Data Binding</h4>
+    <input class="section-item" type="text" [(ngModel)]="bindingText" />
+  </div>
+  <div class="exercise-section">
+    <h4 class="section-title">Two-Way Data Binding</h4>
+    <span class="section-item">{{ bindingText }}</span>
+  </div>
+</div>
