@@ -10,6 +10,9 @@ import { CustomDirectivesComponent } from './components/custom-directives/custom
 import { CapitalizeDirectiveDirective } from './directives/capitalize-directive.directive';
 import { DataBindingComponent } from './components/data-binding/data-binding.component';
 import { MyFirstModuleModule } from './modules/my-first-module/my-first-module.module';
+import { InjectablesProviderModule } from './modules/injectables-provider/injectables-provider.module';
+import { InjectablesUser1Module } from './modules/injectables-user1/injectables-user1.module';
+import { InjectablesUser2Module } from './modules/injectables-user2/injectables-user2.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { MyFirstModuleModule } from './modules/my-first-module/my-first-module.m
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    MyFirstModuleModule
+    MyFirstModuleModule,
+    InjectablesProviderModule,
+    InjectablesUser1Module,
+    InjectablesUser2Module
   ],
   providers: [],
   bootstrap: [AppComponent]
