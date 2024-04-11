@@ -13,6 +13,7 @@ import { MyFirstModuleModule } from './modules/my-first-module/my-first-module.m
 import { InjectablesProviderModule } from './modules/injectables-provider/injectables-provider.module';
 import { InjectablesUser1Module } from './modules/injectables-user1/injectables-user1.module';
 import { InjectablesUser2Module } from './modules/injectables-user2/injectables-user2.module';
+import { PipesModule } from './modules/pipes/pipes.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { InjectablesUser2Module } from './modules/injectables-user2/injectables-
     MyFirstModuleModule,
     InjectablesProviderModule,
     InjectablesUser1Module,
-    InjectablesUser2Module
+    InjectablesUser2Module,
+    PipesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
