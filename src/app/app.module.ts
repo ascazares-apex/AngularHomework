@@ -14,6 +14,8 @@ import { InjectablesProviderModule } from './modules/injectables-provider/inject
 import { InjectablesUser1Module } from './modules/injectables-user1/injectables-user1.module';
 import { InjectablesUser2Module } from './modules/injectables-user2/injectables-user2.module';
 import { PipesModule } from './modules/pipes/pipes.module';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { AngularMaterialModule } from './modules/angular-material.module';
 
 @NgModule({
   declarations: [
@@ -32,9 +34,12 @@ import { PipesModule } from './modules/pipes/pipes.module';
     InjectablesProviderModule,
     InjectablesUser1Module,
     InjectablesUser2Module,
-    PipesModule
+    PipesModule,
+    AngularMaterialModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
