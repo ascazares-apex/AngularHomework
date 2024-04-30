@@ -3,10 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { MyFirstComponentComponent } from '../../components/my-first-component/my-first-component.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: MyFirstComponentComponent
-  }
+  // {
+  //   path: '',
+  //   component: MyFirstComponentComponent
+  // }
 ];
 
 @NgModule({

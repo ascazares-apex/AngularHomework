@@ -16,6 +16,7 @@ import { InjectablesUser2Module } from './modules/injectables-user2/injectables-
 import { PipesModule } from './modules/pipes/pipes.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { AngularMaterialModule } from './modules/angular-material.module';
+import { RoutesModule } from './modules/routes/routes.module';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { AngularMaterialModule } from './modules/angular-material.module';
     InjectablesUser1Module,
     InjectablesUser2Module,
     PipesModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    RoutesModule
   ],
   providers: [
     provideAnimationsAsync()
